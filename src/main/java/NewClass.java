@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 public class NewClass extends ConfigurationManager {
 
 
-   /* @Test
+   /* @Test test
     public void testUntitled() throws Exception {
         driver.findElement(Locators.LOGIN).clear();
         driver.findElement(Locators.LOGIN).sendKeys("fjdlskfs;l");
