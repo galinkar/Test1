@@ -8,10 +8,19 @@
     <artifactId>myartifactid</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-<dependencies><dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>2.45.0</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>2.45.0</version>
+        </dependency>
+
+    <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>LATEST</version>
+        <scope>compile</scope>
 </dependency>
+
 </dependencies>
 </project>
