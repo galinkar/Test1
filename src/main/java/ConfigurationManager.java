@@ -1,5 +1,6 @@
 import org.junit.After;
 import org.junit.Before;
+import org.openqa.selenium.WebDriver;
 import org.junit.BeforeClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,10 +16,13 @@ import org.openqa.selenium.support.ui.Select;
 
 public class ConfigurationManager {
 
-    protected WebDriver driver;
-    protected String baseUrl;// = "https://mail.ru/";
+    protected static WebDriver driver = null;
+    protected String baseUrl = "https://mail.ru/";
     private StringBuffer verificationErrors = new StringBuffer();
 
+    public static WebDriver getDriver() {
+        return driver;
+    }
     @Before
     public void setUp() throws Exception {
         driver = new FirefoxDriver();
@@ -36,4 +40,5 @@ public class ConfigurationManager {
 
         }
     }
+
 }

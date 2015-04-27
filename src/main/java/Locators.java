@@ -10,7 +10,18 @@ public interface Locators {
     By AUTH_BUTTON = By.id("mailbox_auth_button");
     By LOGOUT = By.id("PH_logoutLink");
     By MBPASSWORD = By.id("mailbox__password");
-    By AUTHBUTTON = By.id("mailbox__auth__button");
     By LOGOUTLINK = By.id("PH_logoutLink");
-
 }
+
+  /*  private final By value;
+
+    Locators(By value) {
+
+        this.value = value;
+    }
+
+    public By getValue() {
+        return value;
+*/
+
+

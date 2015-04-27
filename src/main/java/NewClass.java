@@ -18,14 +18,24 @@ public class NewClass extends ConfigurationManager {
 
        @Test
         public void testUntitled1() throws Exception {
+           //preparation
+           Data data = new Data();
+           LoginPage loginpage = new LoginPage();
+           //test
+           loginpage.fillinLoginField(data.getLogin());
+           loginpage.fillinPasswordField(data.getPassword());
+           loginpage.clickAuth();
+           asserEquals(loginpage.getPageTitle(), data.getTitle);
+
+           /*
             driver.findElement(Locators.LOGIN).clear();
             driver.findElement(Locators.LOGIN).sendKeys("fjdlskfs;l");
             driver.findElement(Locators.PASSWORD).clear();
             driver.findElement(Locators.PASSWORD).sendKeys("fsdfdf");
             driver.findElement(Locators.AUTH_BUTTON).click();
-        }
 
-   @Test
+*/
+ /*  @Test
     public void testUntitled2() throws Exception {
         driver.get(baseUrl + "/");
         driver.findElement(Locators.LOGIN).clear();
@@ -42,7 +52,12 @@ public class NewClass extends ConfigurationManager {
         driver.findElement(Locators.LOGOUT).click();
         driver.findElement(Locators.MBPASSWORD).clear();
         driver.findElement(Locators.MBPASSWORD).sendKeys("2205856928Fybrfyjd");
-        driver.findElement(Locators.AUTHBUTTON).click();
+        driver.findElement(Locators.AUTH_BUTTON).click();
         driver.findElement(Locators.LOGOUTLINK).click();
+        */
     }
-    }
+
+
+
+
+}
